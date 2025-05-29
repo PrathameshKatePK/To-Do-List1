@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          margin: 40px auto;
+          max-width: 400px;
+          text-align: center;
+        }
+        input[type="text"] {
+          padding: 10px;
+          width: 70%;
+          font-size: 16px;
+        }
+        button {
+          padding: 10px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+        ul {
+          list-style: none;
+          padding: 0;
+          margin-top: 20px;
+        }
+        li {
+          background: #eee;
+          margin-bottom: 10px;
+          padding: 10px;
+          text-align: left;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 5px;
+        }
+        .done {
+          text-decoration: line-through;
+          color: grey;
+        }
+        .btn-delete {
+          background: red;
+          color: white;
+          border: none;
+          padding: 5px 8px;
+          border-radius: 4px;
+          cursor: pointer;
+        }
+      </style>
+</head>
+<body>
+    <h1>My To Do List</h1>
+
+    <input type="text" id="taskInput" placeholder="Add a new Task"/>
+
+    <button id="addBtn">Add</button>
+
+    <ul id="taskList"></ul>
+
+    <script src="todoscript.js"></script>
+</body>
+</html>
